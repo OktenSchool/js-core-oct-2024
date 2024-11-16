@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .target {
+            background: silver;
+            font-size: 30px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>this is h1 tag text</h1>
+<div>Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit. Cumque eius eos ipsum optio quae quis saepe vero! Accusantium debitis dolor est in ipsa
+    iure maiores molestias nam placeat, suscipit tenetur.
+</div>
+
+<ul class="menu">
+    <li>data 1</li>
+    <li>data 2</li>
+</ul>
+
+<ol class="menu">
+    <li>data 1</li>
+    <li>data 2</li>
+    <li>data 1</li>
+    <li>data 2</li>
+    <li>data 3</li>
+    <li>data 4</li>
+    <li>data 5</li>
+    <li>data 6</li>
+    <li>data 7</li>
+    <li>data 8</li>
+    <li>data 9</li>
+    <li>data 10</li>
+</ol>
+
+<script>
+    // let html = {
+    //     lang: 'en',
+    //     head: {
+    //         children: [
+    //             {
+    //                 title: 'meta',
+    //                 attributes: [
+    //                     {name: 'charset', value: "utf-8"}
+    //                 ]
+    //             },
+    //             {
+    //                 title: 'meta', attributes: [
+    //                     {name: 'http-equiv', value: 'X-UA-Compatible'},
+    //                     {name: 'content', value: 'ie=edge'}
+    //                 ]
+    //             }
+    //         ]
+    //     },
+    //     body: '',
+    // }
+
+    // console.dir(document);
+    // let arrayOFLiElements = document.getElementsByTagName('li');
+    // console.log(arrayOFLiElements);
+    // console.log(arrayOFLiElements[0]);
+    // // setTimeout(() => {
+    // //     arrayOFLiElements[0].innerText = 'hello okten';
+    // // }, 3000);
+    //
+    // let li1 = arrayOFLiElements[0];
+    //
+    // // li1.style.background = 'silver';
+    // // li1.style.fontSize = '30px';
+    //
+    // console.log(li1.classList);
+    //
+    // li1.classList.add('target');
+    // li1.classList.add('foobar');
+
+    // let menuList = document.getElementsByClassName('menu');
+    // console.log(menuList);
+    //
+    // let ul = menuList[0];
+    // console.log(ul.children);
+    // let ol = menuList[1];
+    // // console.log(ol.children[0]);
+    // // console.log(ol.children[1]);
+    // let olChildren = ol.children;
+    // for (const li of olChildren) {
+    //     console.log(li.innerText);
+    // }
+
+
+    // let myDiv = document.createElement('div');
+    // myDiv.innerText = 'hello';
+    // // myDiv.style.height = '100px';
+    // // myDiv.style.width = '100px';
+    // // myDiv.style.background = 'silver';
+    // myDiv.classList.add('target');
+    //
+    // document.body.appendChild(myDiv);
+
+
+    let skills = [
+        'javascript',
+        'python',
+        'ruby',
+        'java',
+        'html',
+        'mysql',
+        'javascript',
+        'python',
+        'ruby',
+        'java',
+        'html',
+        'mysql',
+        'javascript',
+        'python',
+        'ruby',
+        'java',
+        'html',
+        'mysql'
+
+    ]
+
+
+    let myUl = document.createElement('ul');
+    document.body.appendChild(myUl);
+
+    for (const skill of skills) {
+        console.log(skill);
+        let li = document.createElement('li');
+        li.innerText = skill;
+        myUl.appendChild(li);
+
+    }
+
+
+</script>
+</body>
+</html>
