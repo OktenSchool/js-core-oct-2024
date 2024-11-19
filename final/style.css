@@ -1,0 +1,19 @@
+.products {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .product {
+        width: 200px;
+        background: silver;
+
+        h2 {
+            background: cornflowerblue;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
